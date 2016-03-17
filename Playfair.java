@@ -1,6 +1,5 @@
 /*
-	Program to implement playfair algorithm
-	Author: PracsPedia		www.pracspedia.com
+	Java Program to implement playfair algorithm
 */
 import java.io.*;
 class Playfair
