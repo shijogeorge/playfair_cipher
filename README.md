@@ -5,32 +5,8 @@ Playfair cipher is a manual symmetric encryption technique and was the first lit
 It was used for tactical purposes by British forces in the Second Boer War and in World War I and for the same purpose by the Australians during World War II. This was because Playfair is reasonably fast to use and requires no special equipment. A typical scenario for Playfair use would be to protect important but non-critical secrets during actual combat. By the time the enemy cryptanalysts could break the message the information was useless to them.
 
 
-Encrypted Message
-
-KXJEY  UREBE  ZWEHE  WRYTU  HEYFS 
-KREHE  GOYFI  WTTTU  OLKSY  CAJPO 
-BOTEI  ZONTX  BYBWT  GONEY  CUZWR 
-GDSON  SXBOU  YWRHE  BAAHY  USEDQ
-
-Decrypted Message 
-
-PT BOAT ONE OWE NINE LOST IN ACTION IN BLACKETT 
-STRAIT TWO MILES SW MERESU COVE X CREW OF TWELVE 
-X REQUEST ANY INFORMATION.
-
-
-How it is Done !!
-
-
                                                       ALGORITHMS
-                                                      
-The 'key' for a playfair cipher is generally a word, for the sake of example we will choose 'monarchy'. This is then used to generate a 'key square', e.g.
 
-m o n a r
-c h y b d
-e f g i k
-l p q s t
-u v w x z
 
 Any sequence of 25 letters can be used as a key, so long as all letters are in it and there are no repeats. Note that there is no 'j', it is combined with 'i'. We now apply the encryption rules to encrypt the plaintext.
 
@@ -48,31 +24,7 @@ Any sequence of 25 letters can be used as a key, so long as all letters are in i
         
         b. If the letters appear on the same row of the table, replace them with the letters to their immediate right respectively (wrapping around to the left side of the row if a letter in the original pair was on the right side of the row). 'ma' -> 'or', 'lp' -> 'pq'
         
-        c. If the letters appear on the same column of the table, replace them with the letters immediately below respectively (wrapping around to the top side of the column if a letter in the original pair was on the bottom side of the column). 'rk' -> 'dt', 'pv' -> 'vo' 
-
-If there is more doubt ! ! !
-
-m * * a *
-* * * * *
-* * * * *
-l * * s *
-* * * * *
-Hence, al -> ms
-
-* * * * *
-* h y b d
-* * * * *
-* * * * *
-* * * * *
-Hence, hb -> yd
-
-* * n * *
-* * y * *
-* * * * *
-* * q * *
-* * w * *
-Hence, nq -> yw
-
+        c. If the letters appear on the same column of the table, replace them with the letters immediately below respectively (wrapping around to the top side of the column if a letter in the original pair was on the bottom side of the column). 'rk' -> 'dt', 'pv' -> 'vo' .
 
 
 
